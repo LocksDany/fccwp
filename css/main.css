@@ -1,0 +1,131 @@
+@font-face { font-family: weathericons; src: url('weather-icons/font/weathericons-regular-webfont.ttf'); }
+
+body {
+    margin-top: 50px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+h1{
+    font-size: 90px;
+    color: #e7eff6;
+    font-family: 'Monospace';
+}
+
+h2{
+    color: #e7eff6;
+    font-family: 'Open Sans Condensed';
+}
+
+.mb-background{
+    position:fixed;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/cloudy.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 0;
+    display: block;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.main-block{
+    background-color: rgba(99,172,229, 0.8);
+    border-radius: 2px;
+    padding-right: 40px;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.selection{
+    margin: 10px 0px 20px 10px;
+    width: 100%;
+    height: 100
+}
+
+.invisible{
+    display: none;
+}
+
+#degreeSelection{
+    color: #e7eff6;
+    font-size: 50px;
+    font-family: 'Open Sans Condensed';
+}
+
+#degreeSelection p{
+    margin-left: 10px
+}
+
+#degreeSelection button{
+    background-color: rgba(89,162,219, 0.8);
+    font-size: 40px
+}
+
+#degreeSelection button:hover{
+    color: #e7eff6;
+    background-color: #4CAF50;
+    font-size: 40px;
+}
+
+.status{
+    color: #e7eff6;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: -18px;
+    margin-left: 10px;
+    font-family: 'Open Sans Condensed';
+}
+
+.temp{
+    margin-left: 10px;
+}
+
+.temp i {
+    font-size:63px;
+}
+
+.min-max{
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
+.info{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed';
+    font-size: 35px;
+    color: #e7eff6;
+    border-top-style: solid;
+    border-top-color: rgba(231, 239, 246, 0.49);
+}
+
+.sub-info{
+    font-size: 25px;
+}
+    
+@media only screen and (max-width: 991px){
+
+}
+
+@media only screen and (max-width: 316px){
+    h1{
+        font-size: 70px;
+    }
+    .temp i {
+        font-size:50px!important;
+    }
+}
+
