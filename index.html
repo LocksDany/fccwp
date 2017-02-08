@@ -8,6 +8,7 @@
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/icons.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -42,12 +43,15 @@
         <span id="weather" class="invisible">
             
         <!-- Name and Status -->
-        <h3 class="col-xs-12 text-center status"><span id="status"></span></h3>
+            <h3 class="col-md-12 text-center name"><span id="name"></span></h3>
         
+        <!-- Status -->
+            <h2 class="col-md-12 text-center status"><span id="status"></span></h2>
+            
         <!-- Temp -->
         <div class="col-md-12 temp row">
-            <h1 class="text-center col"><i class="wi wi-thermometer"></i><span id="temperature"></span>°<span id="degree"></span></h1>
-            <h2 class="text-center min-max col">Max: <span id="tempMax"></span>°<span class="degree"></span> Min: <span id="tempMin"></span>°<span class="degree"></span></h2>
+            <h1 class="text-center col-md-12"><i class="wi wi-thermometer"></i><span id="temperature"></span>°<span class="degree"></span></h1>
+            <h2 class="text-center min-max col">Max: <span id="tempMax"></span>°<span class="degree"></span><span id="space"><br></span>Min: <span id="tempMin"></span>°<span class="degree"></span></h2>
         </div>
         
         <!-- Other Info -->
@@ -61,7 +65,8 @@
             <!-- Wind -->
             <div class="col-md-4"><p><i class="wi wi-strong-wind"></i> Winds<br><span class="sub-info" id="wind"></span></p></div>
         </div>
-            
+        
+            <button id="config" type="button" class="col conf pull-right btn btn-sm"><i class="glyphicon glyphicon-cog"></i> Units</button>
         </span>
         
     </div>
